@@ -1,0 +1,21 @@
+<resources>
+    <style name="Theme.MyApplication" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+    </style>
+    <style name="Theme.MyApplication.Splash" parent="Theme.MyApplication">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+    </style>
+    <style name="Theme.MyApplication.SignUp" parent="Theme.MyApplication" />
+    <style name="Theme.MyApplication.Login" parent="Theme.MyApplication" />
+    <style name="Theme.MyApplication.Home" parent="Theme.MyApplication" />
+    <style name="Theme.MyApplication.Search" parent="Theme.MyApplication" />
+    <style name="Theme.MyApplication.CategoryProducts" parent="Theme.MyApplication" />
+    <style name="Theme.MyApplication.ItemInfo" parent="Theme.MyApplication" />
+    <style name="Theme.MyApplication.Cart" parent="Theme.MyApplication" />
+    <style name="Theme.MyApplication.Checkout" parent="Theme.MyApplication" />
+    <style name="Theme.MyApplication.OrderConfirmation" parent="Theme.MyApplication" />
+    <style name="Theme.MyApplication.Profile" parent="Theme.MyApplication" />
+    <style name="Theme.MyApplication.PurchaseHistory" parent="Theme.MyApplication" />
+</resources>

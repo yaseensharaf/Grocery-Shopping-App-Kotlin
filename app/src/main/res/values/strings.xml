@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Grocery store</string>
+    <string name="signup_activity_label">Sign Up</string>
+    <string name="login_activity_label">Log In</string>
+    <string name="home_activity_label">Home</string>
+    <string name="search_activity_label">Search</string>
+    <string name="category_products_activity_label">Category Products</string>
+    <string name="item_info_activity_label">Item Details</string>
+    <string name="cart_activity_label">Cart</string>
+    <string name="checkout_activity_label">Checkout</string>
+    <string name="order_confirmation_activity_label">Order Confirmation</string>
+    <string name="profile_activity_label">Profile</string>
+    <string name="purchase_history_activity_label">Purchase History</string>
+</resources>

@@ -1,0 +1,5 @@
+<!-- res/drawable/search_bg.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#CCCCCC" /> <!-- Light gray color -->
+    <corners android:radius="8dp" />
+</shape>

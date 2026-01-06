@@ -1,0 +1,6 @@
+<!-- res/values/dimens.xml -->
+<resources>
+    <!-- Define cart item height dimension -->
+    <dimen name="cart_item_height">80dp</dimen>
+    <!-- Add other dimension values if needed -->
+</resources>

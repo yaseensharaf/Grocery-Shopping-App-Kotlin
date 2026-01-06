@@ -1,0 +1,27 @@
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:padding="8dp"
+android:background="@drawable/item_background"
+android:gravity="center_horizontal"
+android:layout_margin="8dp">
+
+<ImageView
+    android:id="@+id/categoryImage"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:scaleType="centerInside"
+    android:contentDescription="Category Image" />
+
+<TextView
+    android:id="@+id/categoryName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Category Name"
+    android:textSize="12sp"
+    android:gravity="center"
+    android:textAlignment="center"
+    android:textColor="#333333" />
+</LinearLayout>

@@ -1,0 +1,138 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <!-- Header with Back Button -->
+    <RelativeLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_back"
+            android:contentDescription="Back"
+            android:tint="@android:color/white"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Product Info"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <!-- Product Details -->
+    <LinearLayout
+        android:id="@+id/productDetailsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_below="@id/header_layout"
+        android:layout_above="@id/bottom_navigation"
+        android:gravity="center_horizontal">
+
+        <!-- Product Image -->
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rounded_background"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/productImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter" />
+        </LinearLayout>
+
+        <!-- Product Name -->
+        <TextView
+            android:id="@+id/ItemTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Name"
+            android:textSize="24sp"
+            android:textStyle="bold"
+
+            android:layout_marginTop="16dp"
+            android:gravity="center" />
+
+        <!-- Product Price -->
+        <TextView
+            android:id="@+id/ItemPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="£0.00"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            android:layout_marginTop="8dp"
+            android:gravity="center" />
+
+        <!-- Product Description -->
+        <TextView
+            android:id="@+id/ItemDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description goes here."
+            android:textSize="16sp"
+            android:textColor="@android:color/darker_gray"
+            android:gravity="center"
+            android:layout_marginTop="16dp" />
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/btnCart"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text="ADD TO CART"
+                android:backgroundTint="@color/purple_500"
+                android:textColor="@android:color/white"
+                android:elevation="4dp"
+                android:layout_margin="8dp" />
+
+            <Button
+                android:id="@+id/btnBuy"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text="GO TO CART"
+                android:backgroundTint="@color/purple_500"
+                android:textColor="@android:color/white"
+                android:elevation="4dp"
+                android:layout_margin="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_nav_menu"
+
+        android:background="@color/white"
+        app:labelVisibilityMode="labeled"
+        app:itemIconTint="@color/gray_700"
+        app:itemTextColor="@color/gray_700" />
+</RelativeLayout>
