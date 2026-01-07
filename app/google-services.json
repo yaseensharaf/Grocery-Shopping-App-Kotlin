@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "630624617643",
+    "firebase_url": "https://yass-32d68-default-rtdb.firebaseio.com",
+    "project_id": "yass-32d68",
+    "storage_bucket": "yass-32d68.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:630624617643:android:6481f814a8310c455b63ee",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2fOwKdNb-N8jyTESvq1Y1Cu9lvTDDMqw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
